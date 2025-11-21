@@ -17,3 +17,23 @@
   font-weight: 200;
   font-style: normal;
 }
+
+.border-red {
+  border: 1px red solid;
+}
+
+.border-green {
+  border: 1px $primary solid;
+}
+
+.border-pink {
+  border: 1px pink solid;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-page {
+  background-color: #f7f3e8;
+}

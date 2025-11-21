@@ -1,11 +1,11 @@
 <template>
-  <q-layout view="lHh Lpr lff q-ma-lg q-pa-xl">
-    <q-header class="bg-secondary">
+  <q-layout view="lHh Lpr lff">
+    <q-header class="bg-secondary bg-transparent q-ma-xl">
       <q-toolbar>
-        <div class="text-h6 text-italic default-text">Spark Studios</div>
+        <div class="text-h6 text-italic text-primary la-belle-aurore-regular">Spark Studios</div>
         <q-space />
         <!-- nav btns -->
-        <div class="row q-gutter-sm items-center">
+        <div class="row q-gutter-sm justify-center items-center">
           <q-btn
             v-for="link in linkList"
             :key="link.name"
@@ -13,17 +13,17 @@
             :icon="link.icon"
             flat
             @click="$router.push(link.path)"
-            class="default-text"
+            class="text-primary"
           />
         </div>
       </q-toolbar>
     </q-header>
 
-    <q-page-container class="default-page q-ma-lg">
+    <q-page-container class="bg-page q-ma-xl q-pa-xl">
       <router-view />
     </q-page-container>
 
-    <q-footer class="bg-secondary">
+    <q-footer class="bg-secondary q-ma-xl">
       <div class="text-caption">
         @2025 Spark Studios All Rights Reserved | <a href="">Privacy Policy</a>
       </div>
@@ -59,4 +59,12 @@ export default defineComponent({
 })
 </script>
 
-<style></style>
+<style>
+.custom-padding {
+  padding-top: 50px;
+}
+
+body {
+  background-color: #dfdccd;
+}
+</style>
